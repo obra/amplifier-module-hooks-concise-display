@@ -17,14 +17,14 @@ Add to your bundle:
 ```yaml
 hooks:
   - module: hooks-concise-display
-    source: git+https://github.com/jnewland/amplifier-module-hooks-concise-display@main
+    source: git+https://github.com/obra/amplifier-module-hooks-concise-display@main
 ```
 
 Or via CLI:
 
 ```bash
 amplifier module add hooks-concise-display \
-  --source git+https://github.com/jnewland/amplifier-module-hooks-concise-display@main
+  --source git+https://github.com/obra/amplifier-module-hooks-concise-display@main
 ```
 
 ## Configuration
@@ -32,7 +32,7 @@ amplifier module add hooks-concise-display \
 ```yaml
 hooks:
   - module: hooks-concise-display
-    source: git+https://github.com/jnewland/amplifier-module-hooks-concise-display@main
+    source: git+https://github.com/obra/amplifier-module-hooks-concise-display@main
     config:
       enabled: true
       show_thinking: true
