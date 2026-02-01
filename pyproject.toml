@@ -1,0 +1,25 @@
+[project]
+name = "amplifier-module-hooks-concise-display"
+version = "0.1.0"
+description = "Cleaner, more condensed terminal output for Amplifier sessions"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["rich"]
+
+[project.entry-points."amplifier.modules"]
+hooks-concise-display = "amplifier_module_hooks_concise_display:mount"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "amplifier-core",
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[tool.uv.sources]
+amplifier-core = { git = "https://github.com/microsoft/amplifier-core", branch = "main" }
